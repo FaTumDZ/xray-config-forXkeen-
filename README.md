@@ -13,24 +13,3 @@ The configuration file specifies routing for main sites using the following entr
 "ext:geosite_zkeen.dat:other"
 ```
 
-### Direct Connection for YouTube
-A direct (bypass) connection is configured for YouTube and related domains, bypassing routing, using the following rule:
-
-```json
-{
-  "inboundTag": ["redirect", "tproxy"],
-  "outboundTag": "direct",
-  "type": "field",
-  "domain": [
-    "youtube.com",
-    "youtube-nocookie.com",
-    "youtube.googleapis.com",
-    "ytimg.com",
-    "googlevideo.com"
-  ]
-}
-```
-
----
-
-This file provides the main routing configuration for Xkeen, where certain sites are routed through specified external configuration files, while YouTube traffic is routed directly.
