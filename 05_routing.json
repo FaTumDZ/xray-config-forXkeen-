@@ -23,7 +23,7 @@
         ]
       },
 	  
-	        // VPS подключение  |  Доменные имена
+      // VPS подключение  |  Доменные имена
       {
         "inboundTag": ["redirect", "tproxy"],
         "outboundTag": "vless-reality",
@@ -37,26 +37,13 @@
         ]
       },
 	  
-	        // Прямое подключение  |  Все остальное
+      // Прямое подключение  |  Все остальное
       {
         "inboundTag": ["redirect", "tproxy"],
         "outboundTag": "direct",
         "type": "field"
       },
 
-      // Прямое подключение для YouTube
-      {
-        "inboundTag": ["redirect", "tproxy"],
-        "outboundTag": "direct",
-        "type": "field",
-        "domain": [
-          "youtube.com",
-          "youtube-nocookie.com",
-          "youtube.googleapis.com",
-          "ytimg.com",
-          "googlevideo.com"
-        ]
-      },
 
       // VPS подключение  |  IP адреса
       {
@@ -64,7 +51,6 @@
         "outboundTag": "vless-reality",
         "type": "field",
         "ip": [
-
         ]
       }
 
