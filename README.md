@@ -8,7 +8,6 @@ Configuration file for Xkeen, including routing setup for major websites.
 The configuration file specifies routing for main sites using the following entries:
 
 ```
-"ext:geosite_v2fly.dat:google-gemini",
 "ext:geosite_zkeen.dat:domains",
 "ext:geosite_zkeen.dat:other"
 ```
