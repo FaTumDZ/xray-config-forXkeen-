@@ -29,6 +29,7 @@
         "outboundTag": "vless-reality",
         "type": "field",
         "domain": [
+		  "ext:geosite_zkeen.dat:youtube",
 		  "ext:geosite_zkeen.dat:domains",
 		  "ext:geosite_zkeen.dat:other",
 		  "2ip.ru",
