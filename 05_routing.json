@@ -29,7 +29,7 @@
         "outboundTag": "vless-reality",
         "type": "field",
         "domain": [
-		  "ext:geosite_zkeen.dat:domains", // 9-18
+		  "ext:geosite_zkeen.dat:domains", // 9-26
 		  "ext:geosite_zkeen.dat:other",
 		  "2ip.ru",
 		  "2ip.io"
