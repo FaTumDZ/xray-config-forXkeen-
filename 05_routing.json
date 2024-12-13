@@ -11,15 +11,15 @@
         "network": "udp",
         "port": "135, 137, 138, 139"
       },
- 
+	  
       // Блокировка | Реклама и аналитика
       {
         "inboundTag": ["redirect", "tproxy"],
         "outboundTag": "block",
         "type": "field",
         "domain": [
-		  "ext:geosite_v2fly.dat:category-ads-all",
-		  "appcenter.ms"
+		"ext:geosite_v2fly.dat:category-ads-all",
+        "appcenter.ms"
         ]
       },
 	  
@@ -31,29 +31,32 @@
         "domain": [
 		  "ext:geosite_zkeen.dat:domains", 
 		  "ext:geosite_zkeen.dat:other",
+		  "ext:geosite_v2fly.dat:google-gemini",
+		  "ext:geosite_v2fly.dat:speedtest",
 		  "2ip.ru",
 		  "2ip.io",
-	          "fortanga.org",
+	      "fortanga.org",
 		  "svoboda.org",
 		  "kavkazr.com"
         ]
       },
 	  
+      {
+      // VPS подключение  |  IP адреса
+        "inboundTag": ["redirect", "tproxy"],
+        "outboundTag": "vless-reality",
+        "type": "field",
+        "ip": [
+        "ext:geoip_v2fly.dat:google",
+        "ext:geoip_v2fly.dat:twitter"
+        ]
+      },
+
       // Прямое подключение  |  Все остальное
       {
         "inboundTag": ["redirect", "tproxy"],
         "outboundTag": "direct",
         "type": "field"
-      },
-
-
-      // VPS подключение  |  IP адреса
-      {
-        "inboundTag": ["redirect", "tproxy"],
-        "outboundTag": "vless-reality",
-        "type": "field",
-        "ip": [
-        ]
       }
     ]
   }
